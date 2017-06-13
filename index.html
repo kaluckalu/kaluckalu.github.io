@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--StyleSheet-->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/animate.min.css" rel="stylesheet">
+		
+		<!--Bootstrap StyleSheet-->
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">		
+		<link href="css/bootstrap.min.css" rel="stylesheet">		
+		<link href="css/components.css" rel="stylesheet">
+		<link href="css/mquery.css" rel="stylesheet">
+		
+		<!--Bootstrap Script-->
+	</head>
+	<body>
+		<div id="fullpage">
+			
+			<div class="section" id="banner">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<nav>
+								<ul>
+									<li class="active"><a href="index.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="">Consulting</a></li>
+									<li><a href="">Training</a></li>
+									<li><a href="">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</nav>
+							<div class="logo-wrap" data-sr="enter center, over 1.2s">
+								<img src="img/logo.png"> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="intro" data-sr="enter right, over 1.2s">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+								<h3>Services</h3>
+								<p>
+									IT Governance Network Services Management Telecommunication We address all aspects of IT infrastructures and projects: technical and organizational, 
+									to provide practical solutions to our clients’ business needs.
+								</p>
+								<button type="button" class="btn btn-info">View Our Services</button>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+								<img src="img/services.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="intro" data-sr="enter right, over 1.2s">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7" id="write-up">
+								<h3>Consulting</h3>
+								<p>
+									IT Governance Network Services Management Telecommunication We address all aspects of IT infrastructures and projects: technical and organizational, 
+									to provide practical solutions to our clients’ business needs.
+								</p>
+								<button type="button" class="btn btn-info">View Our Services</button>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" id="img-up">
+								<img src="img/services.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="intro" data-sr="enter right, over 1.2s">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+								<div id="write-up">
+									<h3>Training</h3>
+									<p>
+										IT Governance Network Services Management Telecommunication We address all aspects of IT infrastructures and projects: technical and organizational, 
+										to provide practical solutions to our clients’ business needs.
+									</p>
+									<button type="button" class="btn btn-info">View Our Services</button>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" id="img-up">
+								<div class="img-up">
+									<img src="img/services.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+		</div>
+
+		
+		
+		
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/work.js"></script>
+		<script src="js/scrollreveal.min.js"></script>
+		<script src="js/script.js"></script>
+    
+		<script>
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					navigation: true,
+					navigationPosition: 'right',
+					scrollBar:true,
+					responsiveWidth: 520,
+					// autoScrolling: false,
+					afterRender: function(){
+						var pluginContainer = $(this);
+						// alert("The resulting DOM structure is ready");
+						window.sr = new scrollReveal();
+					}
+				});
+			});
+		</script>
+</body>
+</html>

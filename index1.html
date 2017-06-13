@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--StyleSheet-->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/animate.min.css" rel="stylesheet">
+		
+		<!--Bootstrap StyleSheet-->
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">		
+		<link href="css/bootstrap.min.css" rel="stylesheet">		
+		<link href="css/components.css" rel="stylesheet">
+		
+		<!--Bootstrap Script-->
+	</head>
+	<body>
+		<div id="fullpage">
+			
+			<div class="section" id="banner">
+				<div class="container-fluid">
+					<div class="row">
+						<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+						<input type="checkbox" id="btn-menu">
+						<label for="btn-menu"><img src="img/menu-bar.png"></label>
+						<div class="col-xs-12">
+							<nav>
+								<ul>
+									<li class="active"><a href="index.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="">Consulting</a></li>
+									<li><a href="">Training</a></li>
+									<li><a href="">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</nav>
+							
+						</div>
+						<style>
+							#btn-menu{
+								display: none;
+							}
+						</style>
+					</div>
+				</div>
+			</div>
+			
+</div>
+			
+
+		
+		
+		
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/work.js"></script>
+		<script src="js/scrollreveal.min.js"></script>
+		<script src="js/script.js"></script>
+        
+		<script>
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					navigation: true,
+					navigationPosition: 'right',
+					scrollBar:true,
+					responsiveWidth: 520,
+					// autoScrolling: false,
+					afterRender: function(){
+						var pluginContainer = $(this);
+						// alert("The resulting DOM structure is ready");
+						window.sr = new scrollReveal();
+					}
+				});
+			});
+		</script>
+</body>
+</html>

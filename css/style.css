@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.section{
+	height:100vh;
+	border-bottom:2px solid #eee;
+}
+
+#banner{
+	text-align:center;
+	background-image:url("../img/11.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+nav{
+	background-color: rgba(97,92,92,.4);
+}
+nav ul{
+	text-transform: uppercase;
+	line-height: 60px;
+}
+nav ul li{
+    display: inline-block;
+    font-family: cambria;
+    font-size: 17px;
+    width: 120px;
+    font-weight: 500;
+}
+nav li a{
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+}
+nav li a:hover{
+	display: block;
+	color: #80b623;
+	text-decoration: none;
+}
+.active > a{
+	color:  #80b623;
+}
+.logo-wrap img{
+	padding:100px 25px 0 25px;
+	width:400px;
+}
+
+
+
+#contact{
+	text-align:center;
+	background-image:url("../img/111.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.menu{
+	background: #343433;
+	height: 110px;
+    font-family: cambria;
+}
+
+.logo{
+	float: left;
+	margin-top: -25px;
+}
+.logo img{
+	width: 170px;
+}
+
+.menu ul{
+	text-transform: uppercase;
+	line-height: 150px;
+	text-align: center;
+	
+}
+.menu ul li{
+    display: inline-block;
+    font-size: 17px;
+    width: 120px;
+	line-height: 50px;
+    font-weight: 500;
+}
+.menu li a{
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+}
+.menu li a:hover{
+	display: block;
+	color: #80b623;
+}
+
+.intro{
+    text-align: justify;
+	line-height: 30px;
+    padding: 10%;
+	zoom: 1;
+}
+.intro:before,
+.intro:after{
+		content: "";
+		display: table;
+	}
+.intro:after{
+		clear: both;
+	}
+.intro{
+	}
+
+.intro img{
+    width: 400px;
+	margin-left: 50px
+	
+}
+.intro h3{
+    font-size: 40px;
+    color: #80b623; 
+    font-family: calibri;
+	font-weight:500;
+}
+.intro p{
+    font-size: 20px;
+    font-family: calibri;
+    width: 600px;
+	padding: 5px;
+}
+.intro button{
+    background-color: #e4e4e4;
+    border: 1px  solid #3B4A5F;
+	border-radius: 5px;
+    width: 200px;
+    color: #3B4A5F;
+    font-weight: 700;
+    font-size: 17px;
+	line-height: 25px;
+	margin-top: 10px;
+}
+.intro button:hover{
+    background-color: white;
+    border:1px solid #535362;
+}
+#alt{
+	background-color: #eee;
+}
+
+
+.nav.stick{
+	position: fixed;
+    top: 80px;
+    z-index: 10000;
+    margin-top:12px;
+	width: 200px;
+}
+.menu-list{
+	width: 200px;
+	margin-left: 10px;
+	float: left;
+	font-family: calibri;
+}
+.menu-list ul{
+	list-style-type: none;
+}
+#header{
+	background: #343433;
+	border-left: 4px solid #343433;
+	border-bottom: 1px solid #343433;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	color: aliceblue;
+	text-align: center;
+}
+.menu-list ul li{
+	line-height: 40px;
+	border-bottom: 1px solid aliceblue;
+	background: #343433;
+}
+.menu-list ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+	padding-left: 20px;
+	color: aliceblue;
+}
+.menu-list ul li a:hover{
+	border-left: 4px solid #80b623;
+	color: #80b623;
+	background: #fff;
+}
+.content{
+	text-align: baseline;
+	line-height: 27px;
+	color: rgb(51, 51, 51);
+	padding-top: 15px;
+	margin-left: -100px;
+}
+.content h2{
+    font-family: cambria;
+	color: rgb(122, 201, 67);
+	margin-bottom: 25px;
+}
+.content p{
+    font-family: calibri;
+}
+.content ul{
+    font-family: calibri;
+	list-style-position: inside;
+	list-style-image: url(../img/bullet.png);
+}
+.content img{
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+}
+.space{
+	border-bottom: 1px solid #343;
+}
+.space span{
+	line-height: 50px;
+    color: #80b623; 
+    font-family: calibri;
+	font-size: 18px;
+}
+.top{
+	float: right;
+}
+.top img{
+	width: 70px;
+}
+
+
+#contact input{
+	line-height: 35px;
+	width: 400px;
+	font-size: 15px;
+	background-color: transparent;
+	color: white;
+	font-family: nyala;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+#contact textarea{
+	height: 200px;
+	width: 400px;
+	font-size: 17px;
+	font-family: nyala;
+	background-color: transparent;
+	color: white;
+	padding-left: 10px;
+	border: 1px solid white;
+	margin-bottom: 20px;
+}
+#contact button{
+	background-color:transparent;
+	color: white;
+    font-family: calibri;
+	font-size: 17px;
+	width: 300px;
+	border: 1px solid white;
+	line-height: 35px;
+}
+#contact button:hover{
+	background-color:transparent;
+    border: 1px  solid #ccc;
+	color: #ccc;
+	
+}
